@@ -1,0 +1,420 @@
+1) a=20
+b=10
+print ("Addition =",a+b)
+print("Difference =",abs(a-b))
+print("Multiplication : ",a*b)
+print("Division: ",a/b)
+
+
+2)
+a=100
+b=20
+c=30
+if a>b and a>c:
+    print("A is greater")
+elif b>a and b>c:
+    print("B is greater")
+else:
+    print("C is greater")
+
+
+3)
+a=int(input("Enter a number"))
+if a%2==0:
+    print("Number entered is even")
+else:
+    print("Number entered is odd")
+
+
+4)
+num=31
+x=0
+for i in range(2,num):
+    if num%i == 0:
+        x=1
+        break
+if x==0:
+    print("prime")
+else: 
+    print("not prime")
+
+
+5)
+arg1,arg2,arg3,arg4,arg5=sys.argv[0],sys.argv[1],sys.argv[2],sys.argv[3],sys.argv[4]
+print("arg1=",arg1)
+print("arg2=",arg2)
+print("arg3=",arg3)
+print("arg4=",arg4)
+print("arg5=",arg5)
+
+arg3,arg4,arg5=input("Enter 3 numbers")
+if arg3>arg4 and arg3>arg5:
+  print("the biggest no is",arg3)
+elif arg4>arg3 and arg4>arg5:
+  print("the biggest no is",arg4)
+else:
+  print("the biggest no is",arg5)
+
+
+6)
+a="Hello, World "
+for x in a:
+    print(x)
+    
+b=a[:5]
+print("Slicing strings", b)
+print("Repeating string 100 times:-", b*100)
+
+c="Bye"
+d=a+c
+print("String after concatenating",d)
+
+
+7)
+a=[0,1,2,3,4,5,6,7,8,9]
+print(a)
+for i in a:
+    print(i)
+b=a[0:5]
+print("Slicing list",b)
+print("Repeting list elements",b*4)
+c=['a','b']
+a.extend(c)
+print(a)
+
+
+8)
+a=(0,1,2,3,4,5,6,7,8,9)
+print(a)
+for i in a:
+    print(i)
+b=a[0:5]
+print("Slicing list",b)
+print("Repeting list elements",b*4)
+c=('a','b')
+
+
+9)
+a=2+4j
+b=4+5j
+print("Addition :",a+b)
+print("Subtraction :",a-b)
+print("Multiplication :",a*b)
+print("Division :",a/b)
+
+
+10)
+a=4.2
+b=6.4
+add=a+b
+sub=b-a
+mul=a*b
+div=b/a
+mod=a%b
+exp1=a**b
+flordiv=b//a
+print("addition is \n",add)
+print("subtraction is \n",sub)
+print("multiplication is \n",mul)
+print("division is \n",div)
+print("modulus is \n",mod)
+print("exponent is \n",exp1)
+print("floor division is \n",flordiv)
+
+
+11)
+a = 4            
+b = 8             
+c = a & b;       
+print("Value of c (a&b) is ", c)
+c = a | b;         
+print("Value of c (a|b) is ", c)
+c = a ^ b;        
+print("Value of c (a^b) is ", c)
+c = ~a;           
+print("Value of c (~a) is ", c)
+c = a << 2;       
+print("Value of c (a<<2) is ", c)
+c = a >> 2;       
+print("Value of c (a>>2) is ", c)
+
+
+12)
+a=int((input("Enter a number")))
+b=int((input("Enter a number")))
+c=int((input("Enter a number")))
+d=int((input("Enter a number")))
+e=int((input("Enter a number")))
+f=int((input("Enter a number")))
+g=int((input("Enter a number")))
+h=int((input("Enter a number")))
+i=int((input("Enter a number")))
+j=int((input("Enter a number")))
+avg=(a+b+c+d+e+f+g+h+i+j)/10
+countBig=0
+countSmall=0
+countEqual=0
+print("Average of the 10 nos is =",avg)
+print("Numbers smaller than the Average are below:")
+if a<avg:
+    print ("a=",a)
+    countSmall+=1
+elif a>avg:
+    print ("a=",a, "is bigger than avg=",avg)
+    countBig+=1
+else:
+    print ("a=",a, "is equal to avg=",avg)
+    countEqual+=1
+    
+if b<avg:
+    print ("b=",b)
+    countSmall+=1
+elif b>avg:
+    print ("b=",b, "is bigger than avg=",avg)
+    countBig+=1
+else:
+    print ("b=",b, "is equal to avg=",avg)
+    countEqual+=1
+if c<avg:
+    print ("c=",c)
+    countSmall+=1
+elif c>avg:
+    print("c=",c, "is bigger than avg=",avg)
+    countBig+=1
+else:
+    print ("c=",c, "is equal to avg=",avg)
+    countEqual+=1
+if d<avg:
+    print ("d=",d)
+    countSmall+=1
+elif d>avg:
+    print ("d=",d, "is bigger than avg=",avg)
+    countBig+=1
+else:
+    print ("d=",d, "is equal to avg=",avg)
+    countEqual+=1    
+if e<avg:
+    print ("e=",e)
+    countSmall+=1
+elif e>avg:
+    print ("e=",e, "is bigger than avg=",avg)
+    countBig+=1
+else:
+    print ("e=",e, "is equal to avg=",avg)
+    countEqual+=1
+if f<avg:
+    print ("f=",f)
+    countSmall+=1
+elif f>avg:
+    print ("f=",f, "is bigger than avg=",avg)
+    countBig+=1
+else:
+    print ("f=",f, "is equal to avg=",avg)
+    countEqual+=1
+if g<avg:
+    print ("g=",g)
+    countSmall+=1
+elif g>avg:
+    print ("g=",g, "is bigger than avg=",avg)
+    countBig+=1
+else:
+    print ("g=",g, "is equal to avg=",avg)
+    countEqual+=1
+if h<avg:
+    print ("h=",h)
+    countSmall+=1
+elif h>avg:
+    print ("h=",h, "is bigger than avg=",avg)
+    countBig+=1
+else:
+    print ("h=",h, "is equal to avg=",avg)
+    countEqual+=1
+if i<avg:
+    print ("i=",i)
+    countSmall+=1
+elif i>avg:
+    print( "i=",i, "is bigger than avg=",avg)
+    countBig+=1
+else:
+    print( "i=",i, "is equal to avg=",avg)
+    countEqual+=1
+if j<avg:
+    print ("j=",j)
+    countSmall+=1
+elif j>avg:
+    print("j=",j, "is bigger than avg=",avg)
+    countBig+=1
+else:
+    print("j=",j, "is equal to avg=",avg)
+    countEqual+=1    
+print ("the total count of nos bigger than average is ",countBig)
+print ("the total count of nos smaller than average is=",countSmall)
+print("the total count of nos equal to the average is=",countEqual)
+
+
+
+13)
+a=int(input("Enter a number"))
+b=int(input("Enter a number"))
+c=int(input("Enter a number"))
+d=int(input("Enter a number"))
+if a>b and a>c and a>d:
+    print("{0} is greater".format(a))
+elif b>a and b>c and b>d:
+    print("{0} is greater".format(b))
+elif c>a and c>b and c>d:
+    print("{0} is greater".format(c))
+else:
+    print("{0} is greater".format(d))
+
+
+
+14)
+a=[1,2,3,4,5,6,7,8,9,10]
+b=["a","b","c","d","e","f","g","h","i","j"]
+for i in b:
+    print(i)
+index=int(input("Enter a index"))
+print(a[index],b[index])
+print(b[4:10])
+print(b[3:])
+n=int(input("Enter a number"))
+print(b*n)
+c=a+b
+print("List after concatenating",c)
+print(a,b)
+
+
+15)
+a=["rohit","rahul","tarun","ankit","riya"]
+if "rohit" in a:
+    print("Yes name exists")
+else:
+    print("Name does not exist")
+
+for i in a:
+  if (i=='Rahul'):
+    print("Rahul is present in the list")
+    break
+else:
+    print("Rahul is not present in the list")
+a.reverse()
+print("List after reversing",a)
+
+
+16)
+num=int(input("Enter the number to check for prime"))
+if num==1:
+  print "Number",num,"is not a prime number"
+elif num>1:
+  for i in range(2,num):
+    if num%i==0:
+      print ("Number",num," is not a prime number")
+      break
+  else:
+    print ("Number",num,"is a prime number")
+upper=int(input("Enter the no till which you need to print the prime numbers"))
+print("The prime numbers between the given range is")
+for num in range(2,upper+1):
+  if num>1:
+    for i in range(2,num):
+      if(num%i)==0:
+        break
+    else:
+      print num
+
+
+17)
+num=[10,25,87,2,54]
+biggest=max(num)
+smallest=min(num)
+print("Maximum is",biggest)
+print("Minimum is",smallest)
+
+
+18)
+list1=[]
+for i in range(1,101):
+  print i
+  list1.append(i)
+list1.reverse()
+print("Numbers 1 to 100 in reverse order using the same for loop",list1)
+list2=[]
+i=1
+print("Printing 1 to 100 using while loop")
+while i<=100:
+  print i
+  list2.append(i)
+  i+=1
+list2.reverse()
+print("Numbers 1 to 100 in reverse order using the same while loop",list2)
+mystring='Hello world'
+print("Printing each character of string Hello world in separate line")
+for x in mystring:
+  print x
+
+
+19)
+print("The even numbers from 1 to 100 using for loop")
+for i in range(1,101):
+  if i%2==0:
+    print i
+print("The numbers from 1 to 100 skipping odd numbers using for loop")
+for i in range (1,101):
+  if i%2!=0:
+    continue
+  print i
+print("Breaking the for loop i =50")
+for i in range(1,101):
+    if i==50:
+      break
+    print i
+print("using continue for the values 10,20,30,40,50")  
+for i in range (1,101):
+  if i==10 or i==20 or i==30 or i==40 or i==50:
+    continue
+  print i
+print("The even numbers from 1 to 100 using while loop is below:")
+i=1
+while i<=100:
+  if i%2==0:
+    print i
+  i+=1
+print("The numbers from 1 to 100 skipping odd numbers using while loop")
+i=1
+while i<=100:
+  if i%2!=0:
+    i+=1
+    continue
+  print i
+  i+=1
+print("Breaking the for loop i=50")
+i=1
+while i<=100:
+  if i==50:
+    break
+  print i
+  i=i+1    
+print("using continue for the values 10,20,30,40,50" )  
+i=1
+while i<=100:
+  if i==10 or i==20 or i==30 or i==40 or i==50:
+    i=i+1
+    continue
+  print i
+  i=i+1
+
+
+20)
+n=int(input("Enter the range"))
+first =0
+second =1
+print(first)
+print(second)
+for i in range(0,n-2):
+   third=first+second
+    print(third)
+    first=second
+    second=third
+    
+
